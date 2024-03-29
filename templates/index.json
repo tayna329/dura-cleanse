@@ -505,7 +505,7 @@
       }
     },
     "brand_tab_block_cqMWcx": {
-      "type": "brand-tab-block",
+      "type": "custom-features-tab-block",
       "blocks": {
         "tab_McWfC8": {
           "type": "tab",
