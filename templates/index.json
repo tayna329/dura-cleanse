@@ -1195,7 +1195,7 @@
             "content_width": 550,
             "align": "center",
             "align_items": "center",
-            "position": "left",
+            "position": "right",
             "custom_horizontal": "",
             "custom_vertical": "",
             "btn_text": "Learn More",
