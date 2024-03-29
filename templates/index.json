@@ -810,6 +810,7 @@
           "type": "largeImg",
           "settings": {
             "image": "shopify:\/\/shop_images\/savage-race-1-6605cd38d95bf.webp",
+            "product_image": "shopify:\/\/shop_images\/group-379-6605cd28b0eff.webp",
             "enable_max_width_image": false,
             "custom_width_image": 1170,
             "enable_scroll_down": false,
