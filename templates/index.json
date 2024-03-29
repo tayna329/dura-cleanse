@@ -523,7 +523,7 @@
           "type": "tab",
           "settings": {
             "title": "Dog Wipes",
-            "menu": "",
+            "menu": "footer",
             "items_grid_gap": 7.5,
             "items_spacing_tb": 30,
             "items_spacing_lr": 10,
@@ -545,7 +545,7 @@
           "type": "tab",
           "settings": {
             "title": "CPAP Supplies",
-            "menu": "",
+            "menu": "main-menu",
             "items_grid_gap": 7.5,
             "items_spacing_tb": 30,
             "items_spacing_lr": 10,
