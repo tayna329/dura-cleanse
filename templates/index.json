@@ -456,7 +456,7 @@
         "color_title": "#26336e",
         "fontsize_title": 32,
         "fontsize_title_mb": 22,
-        "margin_bottom_title": 45,
+        "margin_bottom_title": 0,
         "spotlight_block_des": "",
         "color_des": "#3c3c3c",
         "margin_bottom_des": 30,
