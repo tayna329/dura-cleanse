@@ -263,7 +263,7 @@
       }
     },
     "163221535239da03ba": {
-      "type": "spotlight-block",
+      "type": "custom-features-spotlight-block",
       "blocks": {
         "163221535239da03ba-0": {
           "type": "image",
