@@ -54,6 +54,12 @@
                                         {%- if section.settings.enable_plus_icon -%}
                                             <span class="show-icon-more" style="--color-icon-plus: {{ section.settings.color_plus_icon }}"></span>
                                         {%- endif -%}
+                                        {%- if block.settings.products_image != blank -%}
+                                            <img class="product-image" height="120px" src="{{ block.settings.products_image |  image_url }}"/>
+                                        {%- endif -%}
+                                        {%- if block.settings.is_new_arrival == true -%}
+                                            <img width="100px" height="100px" class="new_arrival_badge-image" src="{{ 'badge-new.png' | asset_url }}" />
+                                        {%- endif -%}
                                     </div>
                                 </div>
                             {%- endif -%}
