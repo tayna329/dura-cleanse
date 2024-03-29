@@ -564,7 +564,7 @@
             "items_per_row": "4",
             "items_grid_gap": 50,
             "items_spacing_tb": 51,
-            "items_spacing_lr": 61,
+            "items_spacing_lr": 99,
             "items_border_radius": 5,
             "image_width": 145,
             "image_height": 15,
