@@ -5,6 +5,20 @@
 		font-family: 'MadaniArabic-Regular';
 		src: url('{{ 'madani-arabic-regular.ttf' | asset_url }}') format('truetype');
 	}
+
+	@font-face {
+		font-family: 'Gotham';
+		src: url('{{ 'gotham-book.ttf' | asset_url }}') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Gotham-Medium';
+		src: url('{{ 'gotham-medium.ttf' | asset_url }}') format('truetype');
+		font-weight: 700;
+		font-style: normal;
+	}
 </style>
 
 {%- if settings.banner_animation == 'effect_fade_up' or settings.animations_hover_elements == '3d-lift' or settings.animations_hover_elements == 'vertical-lift' -%}
