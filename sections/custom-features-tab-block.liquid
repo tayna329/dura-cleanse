@@ -4,6 +4,7 @@
     {%- assign numer_lg = section.settings.brand_item_limit -%}
     <div class="brand-tab-block section-block-{{section.id}}{% if section.settings.layout_style == 'style_02' %} style_02{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" id="brands-{{section.id}}">
         <div class="brands-block">
+            <div class="tab-border"></div>
             <div class="{% if section.settings.container == 'fullwidth' %}container-full{% elsif section.settings.container == '1170' %}container-1170{% elsif section.settings.container == '1770' %}container-1770{% else %}container{% endif %}">
                 {% if section.settings.brand_title != blank %}
                     <div class="halo-block-header text-{{ section.settings.title_align }}{% if section.settings.view_all != blank %} viewAll--{{ section.settings.view_all_align }}{% endif %}">   

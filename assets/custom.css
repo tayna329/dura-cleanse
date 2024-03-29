@@ -88,4 +88,24 @@
     font-weight: 400;
     line-height: 28px;
     text-align: center;
+    padding-top: 20px;
+}
+
+.halo-item {
+    padding-top: var(--items-grid-gap-style);
+    padding-bottom: var(--items-grid-gap-style);
+}
+
+.tab-border {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 100px;
+    height: 1px;
+    background-color: rgba(176, 176, 176, 1);
+}
+
+.brand__custom--tab ul li a {
+    border-bottom-width: 4px !important;
+    padding-bottom: 15px;
 }
