@@ -74,3 +74,18 @@
     right: 10px;
     z-index: 1;
 }
+
+/*//============================================================================
+// Featured Tab Section
+//=============================================================================*/
+.halo-row {
+    justify-content: center;
+}
+
+.featured-description {
+    font-family: MadaniArabic-Regular;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
