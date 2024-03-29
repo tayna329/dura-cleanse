@@ -1268,7 +1268,7 @@
       }
     },
     "rich_text_VtqRqK": {
-      "type": "rich-text",
+      "type": "custom-rich-text",
       "blocks": {
         "sub_heading_ipdwJe": {
           "type": "sub_heading",
