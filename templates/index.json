@@ -804,7 +804,7 @@
       }
     },
     "image_banner_46GXiJ": {
-      "type": "image-banner",
+      "type": "custom-image-banner-with-newsletter",
       "blocks": {
         "large_img_36pPt3": {
           "type": "largeImg",
