@@ -855,7 +855,7 @@
             "countdown_margin_bottom": 35,
             "content_width": 1500,
             "align": "left",
-            "align_items": "bottom",
+            "align_items": "center",
             "position": "left",
             "custom_horizontal": "",
             "custom_vertical": "",
