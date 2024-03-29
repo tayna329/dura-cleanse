@@ -727,7 +727,7 @@
             "color_countdown": "#232323",
             "color_countdown_mb": "#ffffff",
             "countdown_margin_bottom": 35,
-            "content_width": 475,
+            "content_width": 600,
             "align": "center",
             "align_items": "center",
             "position": "right",
