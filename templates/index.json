@@ -626,7 +626,7 @@
         "tab_gjjmt9"
       ],
       "settings": {
-        "container": "fullwidth",
+        "container": "container",
         "padding_full_width": 50,
         "mg_top_desktop": 50,
         "mg_top_tablet": 50,
