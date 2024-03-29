@@ -75,9 +75,9 @@
     z-index: 1;
 }
 
-/*//============================================================================
+/*// ============================================================================
 // Featured Tab Section
-//=============================================================================*/
+// =============================================================================*/
 .halo-row {
     justify-content: center;
 }
@@ -108,4 +108,23 @@
 .brand__custom--tab ul li a {
     border-bottom-width: 4px !important;
     padding-bottom: 15px;
+}
+
+/*// ==================================================================
+// Image banner
+// ===================================================================*/
+.banner-heading {
+    font-family: 'Gotham-Medium';
+    font-size: 48px !important;
+    font-weight: bold !important;
+    line-height: 57.6px !important;
+    text-transform: capitalize;
+}
+
+.banner-text {
+    font-family: MadaniArabic-Regular;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
 }
