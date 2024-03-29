@@ -59,7 +59,7 @@
                                 endif
                             -%}
                             <div class="tab-content--block {% if forloop.first %}active{% endif %} text-center" id="block-{{block.id}}">
-                                <div class="halo-row column-{{ section.settings.brand_rows }} sm-column-2 md-column-3" style="--items-grid-gap-style: {{ block.settings.items_grid_gap | prepend: '-' | append: 'px' }}">
+                                <div class="halo-row column-{{ block.settings.items_per_row }} sm-column-2 md-column-3" style="--items-grid-gap-style: {{ block.settings.items_grid_gap | prepend: '-' | append: 'px' }}">
                                 {% assign results_count = 0 %}
                                     {%- liquid
                                         assign class_hidden = ''
@@ -75,8 +75,21 @@
     
                                         assign results_count = results_count | plus: 1
                                     -%}
+
+                                    {%-for i in (1..10) -%}
+                                        {%-assign image_key = "feature_image_" |  append: i -%}
+                                        {%-assign description_key = "feature_description_" |  append: i -%}
+                                        {%-if block.settings[image_key] != blank -%}
+                                            <div class="halo-item scroll-trigger animate--slide-in" style="--animation-order: {{ forloop.index }}; --items-grid-gap-style: {{ block.settings.items_grid_gap |  append: 'px' }};display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                                <img width="90" height="90" loading="lazy" src="{{ block.settings[image_key] | image_url }}"/>
+                                                <span class="data-lazy-loading"></span>
+                                                <span class="featured-description">{{ block.settings[description_key] }}</span>
+                                            </div>
+                                            
+                                        {%- endif -%}
+                                    {%- endfor -%}
                                     
-                                    <div class="halo-item {{ class_hidden }}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: {{ forloop.index }};{% endif %}--items-grid-gap-style: {{ block.settings.items_grid_gap | append: 'px' }}">
+                                    {% comment %} <div class="halo-item {{ class_hidden }}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: {{ forloop.index }};{% endif %}--items-grid-gap-style: {{ block.settings.items_grid_gap | append: 'px' }}">
                                         <div class="wrapper-item{% if block.settings.enable_title %} has-content{% endif %}" 
                                             style="--items-spacing-tb-style: {{ block.settings.items_spacing_tb | append: 'px' }};
                                                    --items-spacing-lr-style: {{ block.settings.items_spacing_lr | append: 'px' }};
@@ -108,7 +121,7 @@
                                                     </div>
                                                 {% endif %} {% endcomment %}
                                         </div>
-                                    </div>
+                                    </div> {% endcomment %}
                                 </div>
                                 <button type="button" aria-label="{% if section.settings.brand_button_text != blank %}{{ section.settings.brand_button_text | split: '|' | first }}{% else %}{{ 'general.button_load_more.default' | t }}{% endif %}" class="btn button {{ class_btn }}{% if results_count <= numer_lg %} hidden-desktop{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" data-load-more-block data-buttonMore="{{ section.settings.brand_button_text }}" data-buttonLess="{{ section.settings.brand_button_text_less }}" data-rowlg={{numer_lg}} data-results="{{ results_count }}">
                                     {{ section.settings.brand_button_icon }}
@@ -966,6 +979,26 @@
                 {
                     "type": "header",
                     "content": "t:settings_schema.typography.settings.typography.item"
+                },
+                {
+                    "type": "select",
+                    "id": "items_per_row",
+                    "label": "Items per row",
+                    "options": [
+                        {
+                            "value": "4",
+                            "label": "4"
+                        },
+                        {
+                            "value": "5",
+                            "label": "5"
+                        },
+                        {
+                            "value": "6",
+                            "label": "6"
+                        }
+                    ],
+                    "default": "5"
                 },
                 {
                     "type": "range",
