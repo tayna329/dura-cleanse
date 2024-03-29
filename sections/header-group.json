@@ -42,8 +42,8 @@
           "type": "logo",
           "settings": {
             "logo_position": "always",
-            "logo": "shopify:\/\/shop_images\/Duracleanse_Logo.webp",
-            "logo_width": 200,
+            "logo": "shopify:\/\/shop_images\/Duracleanse_Logo_1.png",
+            "logo_width": 160,
             "logo_width_fixed": 100,
             "logo_text": "",
             "logo_font_size": 20,
@@ -204,7 +204,7 @@
             "az_brand_link_text": "See All Brands",
             "az_brand_url": "",
             "bg_mega_menu_bottom": "#f8f8f8",
-            "az_brand_link_text_color": "#000"
+            "az_brand_link_text_color": "#000000"
           }
         }
       },
@@ -246,7 +246,6 @@
         "550fbd21-75fb-4051-9dee-77d91b5239f0": {
           "type": "logo",
           "settings": {
-            "logo_mobile": "shopify:\/\/shop_images\/Duracleanse_Logo.webp",
             "logo_width_mobile": 120,
             "logo_text": "",
             "logo_font_size": 20,

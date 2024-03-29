@@ -81,31 +81,12 @@
                     </div>
                 </div>
                 {%- endif -%}
-                {%- if shop.customer_accounts_enabled -%}
-                    {%- if block.settings.show_customer or block.settings.show_customer_sticky -%}
-                        {% if routes.account_login_url contains '/account/login' %}
-                            {% assign is_contained = true %}
-                        {% else %}
-                            {% assign is_contained = false %}
-                        {% endif %}
-                        <a href="{{ routes.account_login_url }}" class="header__icon header__icon--account link link--text link-effect{% if block.settings.show_customer_sticky%}{% if block.settings.show_customer %}{% else %} hide-main-menu{% endif %}{% else %}{% if block.settings.show_customer %} show-main-menu{% endif %}{% endif %} text-center"{% if is_contained %} data-open-auth-sidebar{% endif %}>
-                            <span class="customer-links d-flex flex-align-center flex-jc-center ml-0">
-                                {%- liquid
-                                    if customer
-                                        echo 'customer.account_fallback' | t
-                                    else
-                                        echo 'customer.sign_in' | t
-                                    endif
-                                -%}
-                            </span>
-                        </a> 
-                    {%- endif -%}                              
-                {%- endif -%}
+                
                 {%- if block.settings.show_search or block.settings.show_search_sticky -%}
                     <details-modal class="header__iconItem header__search ml-0{% if block.settings.show_search_sticky%}{% if block.settings.show_search %}{% else %} hide-main-menu{% endif %}{% else %}{% if block.settings.show_search %} show-main-menu{% endif %}{% endif %}">
                             <details class="search_details search_details--popup">
                                 <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}" data-search-menu-sticky-form data-search-menu>
-                                    <span class="text-center">{% render 'icon-search', class: 'modal__toggle-open icon icon-search w-h-26' %}</span>
+                                    <span class="text-center">{% render 'icon-custom-search', class: 'modal__toggle-open icon icon-search w-h-26' %}</span>
                                 </summary>
                                 <div class="search-modal modal__content p-fixed top-0 bottom-0 left-0 right-0 w-100 h-100v m-zero zi-101{% if settings.show_quick_search %} quickSearch{% endif %}" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
                                     <div class="search-modal__content search-modal__content-bottom d-block p-relative maw-100 text-center" tabindex="-1">
@@ -136,6 +117,27 @@
                             </details>
                     </details-modal>
                 {%- endif -%}
+                {%- if shop.customer_accounts_enabled -%}
+                    {%- if block.settings.show_customer or block.settings.show_customer_sticky -%}
+                        {% if routes.account_login_url contains '/account/login' %}
+                            {% assign is_contained = true %}
+                        {% else %}
+                            {% assign is_contained = false %}
+                        {% endif %}
+                        <a href="{{ routes.account_login_url }}" class="header__icon header__icon--account link link--text{% if block.settings.show_customer_sticky%}{% if block.settings.show_customer %}{% else %} hide-main-menu{% endif %}{% else %}{% if block.settings.show_customer %} show-main-menu{% endif %}{% endif %} text-center"{% if is_contained %} data-open-auth-sidebar{% endif %}>
+                            <span class="customer-links d-flex flex-align-center flex-jc-center ml-0">
+                                {% comment %} {%- liquid
+                                    if customer
+                                        echo 'customer.account_fallback' | t
+                                    else
+                                        echo 'customer.sign_in' | t
+                                    endif
+                                -%} {% endcomment %}
+                                {% render 'icon-user' %}
+                            </span>
+                        </a> 
+                    {%- endif -%}                              
+                {%- endif -%}
                 {%- if settings.show_wishlist -%}
                     {%- if block.settings.show_wishlist or block.settings.show_wishlist_sticky -%}
                         <a href="{{ pages['wish-list'].url }}" class="header__icon header__icon--wishlist link link--text focus-inset stroke-icon{% if block.settings.show_wishlist_sticky%}{% if block.settings.show_wishlist%}{% else %} hide-main-menu{% endif %}{% else %}{% if block.settings.show_wishlist %} show-main-menu{% endif %}{% endif %} text-center">
@@ -146,9 +148,9 @@
                 {%- endif -%}
                 {%- if block.settings.show_cart or block.settings.show_cart_sticky -%}
                     <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset cart-icon-bubble stroke-icon{% if block.settings.show_cart_sticky%}{% if block.settings.show_cart %}{% else %} hide-main-menu{% endif %}{% else %}{% if block.settings.show_cart %} show-main-menu{% endif %}{% endif %} text-center" {% if settings.show_quick_cart %} data-cart-sidebar{% endif %}>
-                        {% render 'icon-cart-03', class: 'w-h-24 stroke-w-10' %}
+                        {% render 'icon-custom-cart', class: 'w-h-24 stroke-w-10' %}
                         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-                        <div class="cart-count-bubble p-relative top-auto right-auto">
+                        <div class="cart-count-bubble">
                             {%- if cart.item_count < 100 -%}
                                 <span class="text" aria-hidden="true" data-cart-count>{{ cart.item_count }}</span>
                             {%- endif -%}
