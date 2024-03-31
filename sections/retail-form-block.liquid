@@ -139,16 +139,14 @@
                 html: '<p>This is the email content.</p>'
             };
 
-           fetch(url, {
-                method: 'POST',
-               mode: 'no-cors'
-                headers: {
+            fetch(url, {
+              method: 'POST',
+              headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${apiKey}`
-                },
-                body: JSON.stringify(message)
+              },
+              body: JSON.stringify(message)
             });
-
             // window._learnq.push(['track', 'Retail Inquiry11', {
             //     'email': email
             // }])
