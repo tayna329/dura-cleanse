@@ -141,6 +141,7 @@
 
            fetch(url, {
                 method: 'POST',
+               mode: 'no-cors'
                 headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${apiKey}`
@@ -148,11 +149,6 @@
                 body: JSON.stringify(message)
             });
 
-            if (response.ok) {
-                console.log('Email sent successfully!');
-            } else {
-                console.error('Failed to send email:', response.statusText);
-            }
             // window._learnq.push(['track', 'Retail Inquiry11', {
             //     'email': email
             // }])
