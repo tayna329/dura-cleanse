@@ -124,13 +124,35 @@
     document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('form-{{ section.id }}').addEventListener('submit', function(event) {
             event.preventDefault();
-            alert("ddd")
-            var email = document.getElementById('email').value;
-            console.log(email)
-            
-            window._learnq.push(['identify', {
-                email: email
-            }]);
+            const apiKey = "";
+            const url = `https://us22.api.mailchimp.com/3.0/messages`;
+
+            const message = {
+                subject: 'Hello from Mailchimp!',
+                from_email: 'prosperoprojetos@gmail.com',
+                to: [
+                {
+                    email: 'superdev925@gmail.com',
+                    type: 'to'
+                }
+                ],
+                html: '<p>This is the email content.</p>'
+            };
+
+           fetch(url, {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${apiKey}`
+                },
+                body: JSON.stringify(message)
+            });
+
+            if (response.ok) {
+                console.log('Email sent successfully!');
+            } else {
+                console.error('Failed to send email:', response.statusText);
+            }
             // window._learnq.push(['track', 'Retail Inquiry11', {
             //     'email': email
             // }])
