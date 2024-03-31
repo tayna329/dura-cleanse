@@ -25,6 +25,11 @@
                     </div>
                 {%- endif -%}
             </div>
+        {%- when 'highlight' -%}
+            <div class="highlight-wrapper">
+                <div class="highlight-number">{{ block.settings.number }}</div>
+                <div class="highlight-text">{{ block.settings.highlight-text }}</div>
+            </div>
         {%- when 'button' -%}
             {% if settings.banner_animation == 'effect_fade_up' %}
             <div class="scroll-trigger animate--slide-in" style="--animation-order: {{ forloop.index }};">
@@ -394,13 +399,10 @@
             "limit": 1,
             "settings": [
                 {
-                    "type": "range",
-                    "min": 100,
-                    "max": 500000,
-                    "step": 1,
+                    "type": "text",
                     "id": "number",
                     "label": "Highlight Number",
-                    "default": 200000
+                    "default": "200,000"
                 },
                 {
                     "type": "text",

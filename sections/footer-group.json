@@ -5,6 +5,46 @@
     "footer-1": {
       "type": "footer-01",
       "blocks": {
+        "text_rVggpi": {
+          "type": "text",
+          "settings": {
+            "custom_width": "25",
+            "heading": "Heading",
+            "logo": "shopify:\/\/shop_images\/logo-no-margin.png",
+            "logo_margin_bottom": 20,
+            "subtext": "<p>Loram ipsum sin dolor Loram ipsum sin dolor Loram ipsum sin dolor Loram ipsum sin dolor Loram ipsum sin dolor Loram ipsum sin dolor<\/p>",
+            "address_icon": "point_icon",
+            "show_address_icon": false,
+            "address_text": "",
+            "phone_icon": "message_icon",
+            "show_phone_icon": false,
+            "phone_text": "",
+            "email_icon": "envelope_icon",
+            "show_email_icon": false,
+            "email_text": "",
+            "icon_size": 16,
+            "icon_color": "",
+            "content_spacing": 1,
+            "mg_bottom": 0,
+            "show_social": false,
+            "social_heading": "",
+            "enable_bg_social": false,
+            "social_margin_top": 35,
+            "social_icon_width": 12,
+            "social_icon_padding": 12,
+            "social_icon_border_width": 1,
+            "social_icon_margin_right": 15,
+            "social_color": "#282828",
+            "social_border_color": "#ffffff",
+            "social_background_color": "#ffffff",
+            "social_background_color_gradient": "",
+            "social_color_hover": "#282828",
+            "social_border_color_hover": "#ffffff",
+            "social_background_color_hover": "#ffffff",
+            "social_background_color_gradient_hover": "",
+            "social_box_hover_color": "#ffffff"
+          }
+        },
         "592a8373-a70d-47d3-a311-321a645e1f14": {
           "type": "link_list",
           "settings": {
@@ -42,7 +82,7 @@
             "input_color_border": "#b0b0b0",
             "button_text": "Submit",
             "button_width": 165,
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "button_color_border": "#0c9cd8",
             "button_color_bg": "#0c9cd8",
             "button_color_bg_gradient": "",
@@ -123,6 +163,7 @@
         }
       },
       "block_order": [
+        "text_rVggpi",
         "592a8373-a70d-47d3-a311-321a645e1f14",
         "a6e74cd6-bd47-4ada-98b5-15e28b94aef6",
         "d935a709-71e0-48ff-8d74-5a367ae6d12d",

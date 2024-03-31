@@ -1,0 +1,241 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'swiper-bundle.min.css' |  asset_url |  stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class=""section section-carousel>
+    <div class="{% if section.settings.container == 'fullwidth' %}container-full{% elsif section.settings.container == '1170' %}container-1170{% elsif section.settings.container == '1770' %}container-1770{% else %}container{% endif %}">
+        <div class="swiper video-swiper">
+            <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                    <div class="swiper-slide">
+                        <div class="video-wrapper">
+                            {%-assign autoVideo = false -%}
+                        <div class="video-section section-block-{{section.id}}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" 
+                        data-loader-script="{%- if autoVideo -%}{{ 'autoplay-video.js' | asset_url }}{%- else -%}{{ 'deferred-media.js' | asset_url }}{%- endif -%}">
+                            <noscript>
+                                <div class="video-section__media"
+                                {% if block.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
+                                >
+                                <a {% if block.settings.video_url == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.video_url }}"{% endif %} class="video-section__poster media media--transparent media--landscape{% if block.settings.cover_image == blank %} video-section__placeholder{% endif %}">
+                                    {%- if block.settings.cover_image != blank -%}
+                                    <img
+                                        srcset="{%- if block.settings.cover_image.width >= 375 -%}{{ block.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 750 -%}{{ block.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 1100 -%}{{ block.settings.cover_image | img_url: '1100x' }} 1100w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 1500 -%}{{ block.settings.cover_image | img_url: '1500x' }} 1500w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 1780 -%}{{ block.settings.cover_image | img_url: '1780x' }} 1780w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 2000 -%}{{ block.settings.cover_image | img_url: '2000x' }} 2000w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 3000 -%}{{ block.settings.cover_image | img_url: '3000x' }} 3000w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 3840 -%}{{ block.settings.cover_image | img_url: '3840x' }} 3840w,{%- endif -%}
+                                        {{ block.settings.cover_image | img_url: 'master' }} {{ block.settings.cover_image.width }}w"
+                                        src="{{ block.settings.cover_image | img_url: '1920x' }}"
+                                        sizes="{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}"
+                                        alt="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}"
+                                        loading="lazy"
+                                        width="{{ block.settings.cover_image.width }}"
+                                        height="{{ block.settings.cover_image.height }}"
+                                    >
+                                    {%- else -%}
+                                    {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                                    {%- endif -%}
+                                </a>
+                                </div>
+                            </noscript>
+                            <deferred-media class="video-section__media deferred-media no-js-hidden{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" data-media-id="{{ section.settings.video_url.id }}"
+                                {% if block.settings.cover_image != blank %} style="padding-bottom: {{ block.settings.video_height }}%;"{% endif %}
+                            >
+                                <button
+                                id="Deferred-Poster-Modal-{{ block.settings.video_url.id }}"
+                                class="video-section__poster media deferred-media__poster media--landscape"
+                                type="button"
+                                {% if autoVideo %}
+                                    style="display: none"
+                                {% endif %}
+                                >
+                                {%- if block.settings.cover_image != blank -%}
+                                    <img
+                                    srcset="{%- if block.settings.cover_image.width >= 375 -%}{{ block.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 750 -%}{{ block.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 1100 -%}{{ block.settings.cover_image | img_url: '1100x' }} 1100w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 1500 -%}{{ block.settings.cover_image | img_url: '1500x' }} 1500w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 1780 -%}{{ block.settings.cover_image | img_url: '1780x' }} 1780w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 2000 -%}{{ block.settings.cover_image | img_url: '2000x' }} 2000w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 3000 -%}{{ block.settings.cover_image | img_url: '3000x' }} 3000w,{%- endif -%}
+                                        {%- if block.settings.cover_image.width >= 3840 -%}{{ block.settings.cover_image | img_url: '3840x' }} 3840w,{%- endif -%}
+                                        {{ block.settings.cover_image | img_url: 'master' }} {{ block.settings.cover_image.width }}w"
+                                    src="{{ block.settings.cover_image | img_url: '1920x' }}"
+                                    sizes="{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}"
+                                    alt="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}"
+                                    loading="lazy"
+                                    width="{{ block.settings.cover_image.width }}"
+                                    height="{{ block.settings.cover_image.height }}"
+                                    >
+                                {%- else -%}
+                                    <div class="not_img" style="--height_not_img: 100%">
+                                    {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                                    </div>
+                                {%- endif -%}
+                                <span class="deferred-media__poster-button motion-reduce">
+                                    {%- render 'icon-play' -%}
+                                </span>
+                                </button>
+                                <{%- if autoVideo -%}div{%- else -%}template{%- endif -%}>
+                                    {% if section.settings.style_video == 'youtube' %}
+                                        {%- if block.settings.video_url.type == 'youtube' -%}
+                                            <iframe src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1&modestbranding=1&autohide=1&showinfo=0&controls=0&mute=1&autoplay=1&loop=1&playlist={{block.settings.video_url.id}}" class="js-youtube" allow="autoplay; loop; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                                        {%- else -%}
+                                            <iframe src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}?autoplay=1&title=0&byline=0&portrait=0&mute=1&loop=1&autopause=0&playlist={{ block.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                                        {%- endif -%}
+                                    {%- else -%}
+                                        <video class="js-video" muted playsinline preload="none" autoplay loop controls>
+                                            <source type="video/mp4" src="{{ block.settings.url_mp4 }}">
+                                        </video>
+                                {% endif %}
+                                </{%- if autoVideo -%}div{%- else -%}template{%- endif -%}>
+                            </deferred-media>
+                            </div>
+                        </div>
+                        <div class="text-wrapper">
+                            <div class="sub-heading">{{ block.settings.sub_heading }}</div>
+                            <div class="heading">{{ block.settings.heading }}</div>
+                            <div class="description">{{ block.settings.description }}</div>
+                        </div>
+                    </div>
+                {%- endfor -%}
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</div>
+<script src="{{ 'swiper-bundle.min.js' |  asset_url }}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper(".video-swiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+
+        console.log("swiper")
+    })
+</script>
+{%  schema %} 
+    {
+        "name": "Custom video slide show",
+        "class": "section-custom-video-slide-show",
+        "max_blocks": 5,
+        "settings": [
+            {
+                "type": "select",
+                "id": "container",
+                "label": "t:sections.layout.container.option",
+                "default": "container",
+                "options": [
+                    {
+                        "value": "container",
+                        "label": "t:sections.layout.container.option1"
+                    },
+                    {
+                        "value": "1170",
+                        "label": "t:sections.layout.container.option4"
+                    },
+                    {
+                        "value": "1770",
+                        "label": "t:sections.layout.container.option3"
+                    },
+                    {
+                        "value": "fullwidth",
+                        "label": "t:sections.layout.container.option2"
+                    }
+                ]
+            },
+            {
+                "type" : "radio",
+                "id" : "style_video",
+                "label" : "t:sections.video.settings.style_video.option",
+                "options": [
+                    {
+                        "value": "youtube",
+                        "label": "t:sections.video.settings.style_video.option1"
+                    },
+                    {
+                        "value": "mp4",
+                        "label": "t:sections.video.settings.style_video.option2"
+                    }
+                ],
+                "default": "youtube"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "video-slide",
+                "name": "Slide",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "cover_image",
+                        "label": "t:sections.video.settings.cover_image.label"
+                    },
+                    {
+                        "type" : "radio",
+                        "id" : "style_video",
+                        "label" : "t:sections.video.settings.style_video.option",
+                        "options": [
+                            {
+                                "value": "youtube",
+                                "label": "t:sections.video.settings.style_video.option1"
+                            },
+                            {
+                                "value": "mp4",
+                                "label": "t:sections.video.settings.style_video.option2"
+                            }
+                        ],
+                        "default": "youtube"
+                    },
+                    {
+                        "type": "video_url",
+                        "id": "video_link",
+                        "accept": [
+                            "youtube",
+                            "vimeo"
+                        ],
+                        "label": "t:sections.video.settings.video_url.label",
+                        "info": "t:sections.video.settings.video_url.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "url_mp4",
+                        "label": "t:sections.video.settings.url_mp4.label",
+                        "info": "t:sections.video.settings.description.info"
+                    },
+                    {
+                        "type": "text",
+                        "label": "Sub heading",
+                        "id": "sub_heading"
+                    },
+                    {
+                        "type": "text",
+                        "label": "Heading",
+                        "id": "heading"
+                    },
+                    {
+                        "type": "textarea",
+                        "label": "Description",
+                        "id": "description"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Custom video slide show"
+            }
+        ]
+    }    
+{% endschema %}

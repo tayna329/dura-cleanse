@@ -1,0 +1,259 @@
+<div id="section-{{ section.id }}" class="section section-retail-form-block">
+    <div class="{% if section.settings.container == 'fullwidth' %}container-full{% elsif section.settings.container == '1170' %}container-1170{% elsif section.settings.container == '1470' %}container-1470{% elsif section.settings.container == '1770' %}container-1770{% else %}container{% endif %}">
+        <style>
+            #section-{{ section.id }} .block-heading {
+                color: {{ section.settings.heading_color }};
+                font-family: Gotham-Medium;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 43.2px;
+                text-align: center;
+            }
+            #section-{{ section.id }} .block-description {
+                color: #494848;
+                font-family: MadaniArabic-Regular;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: center;
+            } 
+            #section-{{ section.id }} .form-heading {
+                color: #ffffff;
+                font-family: Gotham-Medium;
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 38.4px;
+                text-align: left;
+            } 
+
+            #section-{{ section.id }} .form-block label {
+                font-family: MadaniArabic-Regular;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+            #section-{{ section.id }} .form-block input {
+                height: 52px;
+                width: 100%;
+                background: #fff;
+            }
+
+            
+            #section-{{ section.id }} .form_input {
+                padding: 10px 0;
+            }
+
+            #section-{{ section.id }} .form-block {
+                width: 100%;
+                margin-top: 50px;
+                padding: 70px;
+                background: {{ section.settings.form_background }};
+                border-radius: 8px;
+            }
+
+            #section-{{ section.id }} .form-block button {
+                width: 160px;
+                height: 50px;
+                background-color: #0C9CD8;
+                color: #fff;
+                border: 1px solid #0C9CD8;
+                font-family: Gotham-Medium;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            #section-{{ section.id }} .form-block textarea {
+                width: 100%;
+                height: 200px;
+            }
+
+        </style>
+        <div style="display: block; text-align: center;">
+            <h2 class="block-heading">
+                {{ section.settings.heading }}           
+            </h2>
+            <span class="halo-block-title-gradient-border"></span>
+        </div>
+        <div class="block-description">{{ section.settings.description }}</div>
+        <div class="form-block">
+            <h3 class="form-heading">{{ section.settings.form_heading }}</h3>
+            <form id="form-{{ section.id }}">
+                {% if section.settings.company %}
+                    <div class="form_input">
+                        <label for="company_name">Company Name</label>
+                        <input type="text" name="company_name" id="company_name" class="input__feild">
+                    </div>
+                {% endif %}
+                {% if section.settings.name %}
+                    <div class="form_input">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" class="input__feild">
+                    </div>
+                {% endif %}
+                {% if section.settings.email %}
+                    <div class="form_input">
+                        <label for="email">Email Address</label>
+                        <input type="text" name="email" id="email" class="input__feild">
+                    </div>
+                {% endif %}
+                {% if section.settings.phone_number %}
+                    <div class="form_input">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="text" name="phone_number" id="phone_number" class="input__feild">
+                    </div>
+                {% endif %}
+                {% if section.settings.cover_letter %}
+                    <div class="form_input">
+                        <label for="cover_letter">Briefly describe your retail business (type of store, target audience, etc.)</label>
+                        <textarea type="text" name="cover_letter" id="cover_letter" class="input__feild"></textarea>
+                    </div>
+                {% endif %}
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('form-{{ section.id }}').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const apiKey = '39a8cd8efdbf71e4c4c1135ae670b2a6-us22';
+            const serverPrefix = 'us22';
+            const listId = '262fd0ee54';
+
+            const emailData = {
+            members: [
+                {
+                    email_address: 'superdev925@gmail.com',
+                    status: 'subscribed',
+                    merge_fields: {
+                        FNAME: 'Recipient First Name',
+                        LNAME: 'Recipient Last Name'
+                    }
+                }
+            ],
+            message: {
+                subject: 'Your email subject',
+                text: 'Your email content'
+            }
+            };
+
+            const url = `https://${serverPrefix}.api.mailchimp.com/3.0/lists/${listId}`;
+
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${apiKey}`
+                },
+                body: JSON.stringify(emailData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                console.log('Email sent successfully:', data);
+                })
+                .catch(error => {
+                console.error('Error sending email:', error);
+                });
+
+        })
+    })
+</script>
+{% schema  %} 
+    {
+        "name": "Retail Inquire Form",
+        "class": "retail-form-block",
+        "settings": [
+            {
+                "type": "select",
+                "id": "container",
+                "label": "t:sections.layout.container.option",
+                "default": "container",
+                "options": [
+                    {
+                        "value": "container",
+                        "label": "t:sections.layout.container.option1"
+                    },
+                    {
+                        "value": "1170",
+                        "label": "t:sections.layout.container.option4"
+                    },
+                    {
+                        "value": "1470",
+                        "label": "t:sections.layout.container.option5"
+                    },
+                    {
+                        "value": "1770",
+                        "label": "t:sections.layout.container.option3"
+                    },
+                    {
+                        "value": "fullwidth",
+                        "label": "t:sections.layout.container.option2"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "textarea",
+                "id": "description",
+                "label": "Description"
+            },
+            {
+                "type": "text",
+                "id": "form_heading",
+                "label": "Form Heading"
+            },
+            {
+                "type": "color",
+                "id": "form_background",
+                "label": "Form Background"
+            },
+            {
+                "type": "checkbox",
+                "id": "company",
+                "label": "Company Name",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "name",
+                "label": "Name",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "email",
+                "label": "Email",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "phone_number",
+                "label": "Phone Number",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "cover_letter",
+                "label": "Cover Letter",
+                "default": true
+            }
+        ],
+        "presets": [
+            {
+                "name": "Retail Form Block"
+            }
+        ]
+    }
+{% endschema %}

@@ -300,6 +300,11 @@
             "spacing_top": 30,
             "spacing_bottom": 0
           }
+        },
+        "opinew-stars-plugin-product": {
+          "type": "shopify:\/\/apps\/opinew-product-reviews-app\/blocks\/product-stars\/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -328,7 +333,8 @@
         "a86220cf-8641-4e06-87d3-b5ffa195501b",
         "058d88b7-6cce-4aae-a5c4-b8193bbdfa7f",
         "36addb13-cd73-4713-a15c-7d846c4724e7",
-        "1180d91b-75f9-49d9-a9db-2b9f5a49408d"
+        "1180d91b-75f9-49d9-a9db-2b9f5a49408d",
+        "opinew-stars-plugin-product"
       ],
       "settings": {
         "container": "default",
@@ -521,11 +527,28 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
+    },
+    "opinew-reviews-product-page-code": {
+      "type": "apps",
+      "blocks": {
+        "opinew-reviews-widget": {
+          "type": "shopify:\/\/apps\/opinew-product-reviews-app\/blocks\/product-widget\/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "opinew-reviews-widget"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "product-recently-viewed"
+    "product-recently-viewed",
+    "opinew-reviews-product-page-code"
   ]
 }

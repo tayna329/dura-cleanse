@@ -41,9 +41,7 @@
 </style>
 <div class="footer-block__item footer-block__column footer-block__{{ block.type }}{% if block.type == 'text' %} block_text--{{ layout_style }}{% endif %} {{ block__text_first }}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" style="--block-custom-width: {{custom_width}};--block-margin-bottom: {{ mg_bottom }}">
   <div class="{% if block.settings.enable_side_border %}side-bordered{% endif %}">
-    {%- if heading != blank -%}
-      <h2 class="footer-block__heading" data-toggle-column-footer>{{- heading | escape -}}</h2>
-    {%- endif -%}
+    
     <div class="footer-block__details {% if block.settings.phone_text != blank or block.settings.address_text != blank or block.settings.email_text != blank %}has-content-piece{% endif %}" style="--icon-color: {{ final_icon_color }}; --icon-size: {{ block.settings.icon_size | append: 'px' }}; --content-spacing: {{ block.settings.content_spacing | append: 'px' }}">
       {%- if logo != blank -%}
         <div class="image_logo" style="--margin-bottom: {{ logo_margin_bottom }}">
@@ -52,6 +50,9 @@
         </div>
       {%- endif -%}
       <div class="rte">
+        {%- if heading != blank -%}
+          <div class="footer-text-block__heading" data-toggle-column-footer>{{- heading | escape -}}</div>
+        {%- endif -%}
         {% if subtext != blank %}
           {{ subtext | default: ' ' }}
         {% endif %}

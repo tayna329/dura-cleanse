@@ -511,15 +511,15 @@
           "type": "tab",
           "settings": {
             "title": "Body Wipes",
-            "feature_image_1": "shopify:\/\/shop_images\/shower-1-svgrepo-com_1_1.png",
+            "feature_image_1": "shopify:\/\/shop_images\/shower-1-svgrepo-com_1.png",
             "feature_description_1": "Makes a greate shower alternative",
-            "feature_image_2": "shopify:\/\/shop_images\/waves-svgrepo-com_1_1.png",
+            "feature_image_2": "shopify:\/\/shop_images\/waves-svgrepo-com_1.png",
             "feature_description_2": "Quick & effective cleanup when you're sweaty & sticky",
             "feature_image_3": "shopify:\/\/shop_images\/water-drop-svgrepo-com_1.png",
             "feature_description_3": "Provides a deep clean but doesn't leave a residue",
-            "feature_image_4": "shopify:\/\/shop_images\/aloe-vera-svgrepo-com_1_1_1.png",
+            "feature_image_4": "shopify:\/\/shop_images\/aloe-vera-svgrepo-com_1_1.png",
             "feature_description_4": "Loaded with Vitamin E & Aloe for skin Conditioning",
-            "feature_image_5": "shopify:\/\/shop_images\/sparkles-svgrepo-com_1_1.png",
+            "feature_image_5": "shopify:\/\/shop_images\/sparkles-svgrepo-com_1.png",
             "feature_description_5": "Leaves you feeling fresh, re-invigorated and clean",
             "feature_description_6": "",
             "feature_description_7": "",
@@ -967,7 +967,7 @@
             "font_size_des_mb": 12,
             "line_height_des": 26,
             "margin_bottom_des": 35,
-            "color_des": "#FFFFFF",
+            "color_des": "#ffffff",
             "color_des_mb": "#ffffff",
             "countdown": "",
             "hide_countdown_fc": "countdown",
@@ -1019,99 +1019,10 @@
             "video_icon_horizontal_position_mb": "",
             "video_icon_vertical_position_mb": ""
           }
-        },
-        "large_img_8J6bJ9": {
-          "type": "largeImg",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/group-340-6605cce882aaf.webp",
-            "enable_max_width_image": false,
-            "custom_width_image": 1170,
-            "enable_scroll_down": false,
-            "image_behavior": "none",
-            "sub_title": "",
-            "border_sub_title": false,
-            "font_size_sub_title": 32,
-            "font_size_sub_title_mb": 14,
-            "margin_bottom_sub_title": 14,
-            "sub_heading_font": "font_1",
-            "font_weight_sub_title": "500",
-            "sub_title_position": "sub_title_below",
-            "color_sub_title": "#ffffff",
-            "color_sub_title_mb": "#ffffff",
-            "heading": "CPAP Mask Wipes",
-            "letter_spacing_heading": "",
-            "enable_style_italic": false,
-            "font_size_heading": 48,
-            "font_size_heading_mb": 24,
-            "margin_bottom_heading": 20,
-            "font_weight_heading": "600",
-            "color_heading": "#26336e",
-            "color_heading_mb": "#26336e",
-            "border_title": "none",
-            "border_color_title": "#232323",
-            "border_color_title_mobile": "#ffffff",
-            "text": "CPAP-specific formulation for<br> safe & effective cleaning",
-            "font_size_des": 32,
-            "font_size_des_mb": 12,
-            "line_height_des": 26,
-            "margin_bottom_des": 35,
-            "color_des": "#fff",
-            "color_des_mb": "#ffffff",
-            "countdown": "",
-            "hide_countdown_fc": "countdown",
-            "countdown_style": "round",
-            "countdown_position": "countdown_below_desc",
-            "font_size_countdown_number": 30,
-            "font_size_countdown_text": 14,
-            "color_countdown": "#232323",
-            "color_countdown_mb": "#ffffff",
-            "countdown_margin_bottom": 35,
-            "content_width": 475,
-            "align": "center",
-            "align_items": "center",
-            "position": "right",
-            "custom_horizontal": "",
-            "custom_vertical": "",
-            "btn_text": "",
-            "link": "",
-            "btn_icon": "",
-            "button_1_width": 235,
-            "enable_button_custom_border": false,
-            "button_color": "#ffffff",
-            "button_border": "#232323",
-            "button_background": "#232323",
-            "button_background_gradient": "",
-            "button_color_hover": "#ffffff",
-            "button_border_hover": "#232323",
-            "button_background_hover": "#232323",
-            "button_background_gradient_hover": "",
-            "btn_text_2": "",
-            "link_2": "",
-            "btn_icon_2": "",
-            "button_color_2": "#ffffff",
-            "button_border_2": "#232323",
-            "button_background_2": "#232323",
-            "button_background_2_gradient": "",
-            "button_color_hover_2": "#ffffff",
-            "button_border_hover_2": "#232323",
-            "button_background_hover_2": "#232323",
-            "button_background_gradient_hover_2": "",
-            "video_link": "",
-            "adaptive_height_video": "56",
-            "icon_style": "style_1",
-            "color_icon": "#ffffff",
-            "bg_color_icon": "#000000",
-            "enable_custom_video_icon_position": false,
-            "video_icon_horizontal_position": "",
-            "video_icon_vertical_position": "",
-            "video_icon_horizontal_position_mb": "",
-            "video_icon_vertical_position_mb": ""
-          }
         }
       },
       "block_order": [
-        "large_img_V9TBQE",
-        "large_img_8J6bJ9"
+        "large_img_V9TBQE"
       ],
       "settings": {
         "container": "fullwidth",
@@ -1163,7 +1074,7 @@
             "font_weight_sub_title": "700",
             "sub_title_position": "sub_title_above",
             "color_sub_title": "#232323",
-            "color_sub_title_mb": "#fff",
+            "color_sub_title_mb": "#ffffff",
             "heading": "CPAP Mask Wipes",
             "letter_spacing_heading": "",
             "enable_style_italic": false,
@@ -1172,17 +1083,17 @@
             "margin_bottom_heading": 20,
             "font_weight_heading": "600",
             "color_heading": "#26336e",
-            "color_heading_mb": "#fff",
+            "color_heading_mb": "#ffffff",
             "border_title": "none",
             "border_color_title": "#232323",
-            "border_color_title_mobile": "#fff",
+            "border_color_title_mobile": "#ffffff",
             "text": "CPAP-sepcific formulation for<br> safe & effective cleaning",
             "font_size_des": 32,
             "font_size_des_mb": 12,
             "line_height_des": 26,
             "margin_bottom_des": 35,
-            "color_des": "#FFFFFF",
-            "color_des_mb": "#fff",
+            "color_des": "#ffffff",
+            "color_des_mb": "#ffffff",
             "countdown": "",
             "hide_countdown_fc": "countdown",
             "countdown_style": "round",
@@ -1190,7 +1101,7 @@
             "font_size_countdown_number": 30,
             "font_size_countdown_text": 14,
             "color_countdown": "#232323",
-            "color_countdown_mb": "#fff",
+            "color_countdown_mb": "#ffffff",
             "countdown_margin_bottom": 35,
             "content_width": 550,
             "align": "center",
@@ -1203,29 +1114,30 @@
             "btn_icon": "",
             "button_1_width": 200,
             "enable_button_custom_border": false,
-            "button_color": "#fff",
+            "button_color": "#ffffff",
             "button_border": "#0c9cd8",
             "button_background": "#0c9cd8",
             "button_background_gradient": "",
-            "button_color_hover": "#fff",
+            "button_color_hover": "#ffffff",
             "button_border_hover": "#0c9cd8",
             "button_background_hover": "#0c9cd8",
             "button_background_gradient_hover": "",
             "btn_text_2": "",
             "link_2": "",
             "btn_icon_2": "",
-            "button_color_2": "#fff",
+            "button_color_2": "#ffffff",
             "button_border_2": "#232323",
             "button_background_2": "#232323",
             "button_background_2_gradient": "",
-            "button_color_hover_2": "#fff",
+            "button_color_hover_2": "#ffffff",
             "button_border_hover_2": "#232323",
             "button_background_hover_2": "#232323",
             "button_background_gradient_hover_2": "",
+            "video_link": "",
             "adaptive_height_video": "56",
             "icon_style": "style_1",
-            "color_icon": "#fff",
-            "bg_color_icon": "#000",
+            "color_icon": "#ffffff",
+            "bg_color_icon": "#000000",
             "enable_custom_video_icon_position": false,
             "video_icon_horizontal_position": "",
             "video_icon_vertical_position": "",
@@ -1289,11 +1201,19 @@
             "heading_line_height": 1,
             "heading_color": "#0c9cd8"
           }
+        },
+        "highlight_qVx67A": {
+          "type": "highlight",
+          "settings": {
+            "number": "200,000",
+            "highlight-text": "Hygiene<br>Enthusiasts"
+          }
         }
       },
       "block_order": [
         "sub_heading_ipdwJe",
-        "heading_Ep66rA"
+        "heading_Ep66rA",
+        "highlight_qVx67A"
       ],
       "settings": {
         "container": "container",
@@ -1312,14 +1232,55 @@
         "enable_column": false
       }
     },
-    "custom_liquid_TKb78w": {
-      "type": "custom-liquid",
+    "custom_video_slider_show_with_text_TXG3Nx": {
+      "type": "custom-video-slider-show-with-text",
+      "blocks": {
+        "video_slide_Qx9MC3": {
+          "type": "video-slide",
+          "settings": {
+            "style_video": "mp4",
+            "video_link": "",
+            "url_mp4": "https:\/\/m.media-amazon.com\/images\/S\/aplus-media\/sc\/ecfeab06-4f85-42a6-948e-9d70814e265d.mp4",
+            "sub_heading": "Ultimate Convenience and Cleanliness",
+            "heading": "At your Home",
+            "description": "These wipes offer a quick and efficient solution to stay fresh and clean during your various indoor activities. Whether you're mastering a new recipe in the kitchen, engaging in DIY projects, or breaking a sweat with home exercise, Duracleanse Body Wipes provide a refreshing cleanse, leaving you feeling rejuvenated and ready for whatever comes next. Embrace the ease and comfort these wipes offer, ensuring your at-home endeavors are met with the invigorating power of cleanliness."
+          }
+        },
+        "video_slide_EDwpEB": {
+          "type": "video-slide",
+          "settings": {
+            "style_video": "mp4",
+            "video_link": "",
+            "url_mp4": "https:\/\/m.media-amazon.com\/images\/S\/aplus-media\/sc\/ecfeab06-4f85-42a6-948e-9d70814e265d.mp4",
+            "sub_heading": "Ultimate Convenience and Cleanliness",
+            "heading": "At your Home 2",
+            "description": "These wipes offer a quick and efficient solution to stay fresh and clean during your various indoor activities. Whether you're mastering a new recipe in the kitchen, engaging in DIY projects, or breaking a sweat with home exercise, Duracleanse Body Wipes provide a refreshing cleanse, leaving you feeling rejuvenated and ready for whatever comes next. Embrace the ease and comfort these wipes offer, ensuring your at-home endeavors are met with the invigorating power of cleanliness."
+          }
+        },
+        "video_slide_N84Jjc": {
+          "type": "video-slide",
+          "settings": {
+            "style_video": "mp4",
+            "video_link": "",
+            "url_mp4": "https:\/\/m.media-amazon.com\/images\/S\/aplus-media\/sc\/ecfeab06-4f85-42a6-948e-9d70814e265d.mp4",
+            "sub_heading": "Ultimate Convenience and Cleanliness",
+            "heading": "At your Home 3",
+            "description": "These wipes offer a quick and efficient solution to stay fresh and clean during your various indoor activities. Whether you're mastering a new recipe in the kitchen, engaging in DIY projects, or breaking a sweat with home exercise, Duracleanse Body Wipes provide a refreshing cleanse, leaving you feeling rejuvenated and ready for whatever comes next. Embrace the ease and comfort these wipes offer, ensuring your at-home endeavors are met with the invigorating power of cleanliness."
+          }
+        }
+      },
+      "block_order": [
+        "video_slide_Qx9MC3",
+        "video_slide_EDwpEB",
+        "video_slide_N84Jjc"
+      ],
       "settings": {
-        "custom_liquid": ""
+        "container": "container",
+        "style_video": "mp4"
       }
     },
     "image_banner_EktB3N": {
-      "type": "image-banner",
+      "type": "custom-text-image-banner",
       "blocks": {
         "large_img_x3Nr86": {
           "type": "largeImg",
@@ -1442,6 +1403,215 @@
         "enable_dots": false,
         "enable_autoplay": false
       }
+    },
+    "image_banner_yh8C7q": {
+      "type": "image-banner",
+      "blocks": {
+        "large_img_QNmH4a": {
+          "type": "largeImg",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/frame-220-66073154b086d.webp",
+            "enable_max_width_image": false,
+            "custom_width_image": 1170,
+            "enable_scroll_down": false,
+            "image_behavior": "none",
+            "sub_title": "DuraCleanse “Partnering for Success”",
+            "border_sub_title": false,
+            "font_size_sub_title": 48,
+            "font_size_sub_title_mb": 24,
+            "margin_bottom_sub_title": 14,
+            "sub_heading_font": "font_2",
+            "font_weight_sub_title": "500",
+            "sub_title_position": "sub_title_above",
+            "color_sub_title": "#26336e",
+            "color_sub_title_mb": "#ffffff",
+            "heading": "Become a DuraCleanse Retailer",
+            "letter_spacing_heading": "",
+            "enable_style_italic": false,
+            "font_size_heading": 48,
+            "font_size_heading_mb": 24,
+            "margin_bottom_heading": 20,
+            "font_weight_heading": "600",
+            "color_heading": "#0c9cd8",
+            "color_heading_mb": "#0c9cd8",
+            "border_title": "none",
+            "border_color_title": "#232323",
+            "border_color_title_mobile": "#ffffff",
+            "text": "Are you passionate about offering high-quality health and hygiene products to your customers? Dura-Cleanse is seeking partnerships with established retailers who share our commitment to providing exceptional products and exceptional service.",
+            "font_size_des": 24,
+            "font_size_des_mb": 12,
+            "line_height_des": 26,
+            "margin_bottom_des": 35,
+            "color_des": "#ffffff",
+            "color_des_mb": "#ffffff",
+            "countdown": "",
+            "hide_countdown_fc": "countdown",
+            "countdown_style": "round",
+            "countdown_position": "countdown_below_desc",
+            "font_size_countdown_number": 30,
+            "font_size_countdown_text": 14,
+            "color_countdown": "#232323",
+            "color_countdown_mb": "#ffffff",
+            "countdown_margin_bottom": 35,
+            "content_width": 1000,
+            "align": "center",
+            "align_items": "center",
+            "position": "center",
+            "custom_horizontal": "",
+            "custom_vertical": "",
+            "btn_text": "",
+            "link": "",
+            "btn_icon": "",
+            "button_1_width": 235,
+            "enable_button_custom_border": false,
+            "button_color": "#ffffff",
+            "button_border": "#232323",
+            "button_background": "#232323",
+            "button_background_gradient": "",
+            "button_color_hover": "#ffffff",
+            "button_border_hover": "#232323",
+            "button_background_hover": "#232323",
+            "button_background_gradient_hover": "",
+            "btn_text_2": "",
+            "link_2": "",
+            "btn_icon_2": "",
+            "button_color_2": "#ffffff",
+            "button_border_2": "#232323",
+            "button_background_2": "#232323",
+            "button_background_2_gradient": "",
+            "button_color_hover_2": "#ffffff",
+            "button_border_hover_2": "#232323",
+            "button_background_hover_2": "#232323",
+            "button_background_gradient_hover_2": "",
+            "video_link": "",
+            "adaptive_height_video": "56",
+            "icon_style": "style_1",
+            "color_icon": "#ffffff",
+            "bg_color_icon": "#000000",
+            "enable_custom_video_icon_position": false,
+            "video_icon_horizontal_position": "",
+            "video_icon_vertical_position": "",
+            "video_icon_horizontal_position_mb": "",
+            "video_icon_vertical_position_mb": ""
+          }
+        }
+      },
+      "block_order": [
+        "large_img_QNmH4a"
+      ],
+      "settings": {
+        "container": "fullwidth",
+        "padding_full_width": 0,
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "image_banner_title": "",
+        "enable_border_title": false,
+        "color_title": "#202020",
+        "fontsize_title": 24,
+        "fontsize_title_mb": 20,
+        "margin_bottom_title": 25,
+        "image_banner_des": "",
+        "color_des": "#202020",
+        "fontsize_des": 16,
+        "title_align": "center",
+        "style_bg": "none",
+        "bg_color": "",
+        "bg_color_gradient": "",
+        "display_type": "slide",
+        "list_gap": 0,
+        "enable_arrows": false,
+        "arrows_position": "",
+        "enable_dots": false,
+        "enable_autoplay": false
+      }
+    },
+    "custom_liquid_pNptNM": {
+      "type": "retail-features-block",
+      "blocks": {
+        "3_items_tiq6aK": {
+          "type": "3_items",
+          "settings": {
+            "badge_size": 90,
+            "badge_color": "#439e46",
+            "icon_1": "icon_rating",
+            "heading_1": "Proven Track Record",
+            "description_1": "We offer a range of well-established products like our jumbo-sized, no-rinse shower wipes and CPAP cleaning wipes, all designed for convenience and effectiveness.",
+            "icon_2": "icon_awards",
+            "heading_2": "Superior Quality",
+            "description_2": "Our products are rigorously tested and formulated with premium ingredients to ensure exceptional performance and customer satisfaction.",
+            "icon_3": "icon_notice_board",
+            "heading_3": "Strong Brand Reputation",
+            "description_3": "Dura-Cleanse is building a reputation for excellence, and partnering with us allows you to leverage our growing brand recognition.",
+            "icon_size": 50,
+            "icon_color": "#ffffff",
+            "heading_color": "#26336e",
+            "description_color": "#494848"
+          }
+        },
+        "2_items_rUymma": {
+          "type": "2_items",
+          "settings": {
+            "badge_size": 90,
+            "badge_color": "#439e46",
+            "icon_1": "icon_bulb",
+            "heading_1": "Continuous Innovation",
+            "description_1": "We are always improving our products based on customer feedback and industry advancement. We have the highest customer satisfaction in the industry -see our Amazon reviews!",
+            "icon_2": "icon_note",
+            "heading_2": "Profitable Margins",
+            "description_2": "We offer competitive wholesale pricing to ensure your success.",
+            "icon_size": 50,
+            "icon_color": "#ffffff",
+            "heading_color": "",
+            "description_color": ""
+          }
+        },
+        "2_items_9bzjFk": {
+          "type": "2_items",
+          "settings": {
+            "badge_size": 90,
+            "badge_color": "#439e46",
+            "icon_1": "icon_bulb",
+            "heading_1": "Low Minimum Order Quantities",
+            "description_1": "We are open to MOQ's as low as 1000 units to help you test our products with your customers with minimal risk",
+            "icon_2": "icon_note",
+            "heading_2": "Dedicated Support",
+            "description_2": "Our team is committed to providing you with the support you need to thrive, including marketing materials and sales assistance.",
+            "icon_size": 50,
+            "icon_color": "#ffffff",
+            "heading_color": "#26336e",
+            "description_color": "#494848"
+          }
+        }
+      },
+      "block_order": [
+        "3_items_tiq6aK",
+        "2_items_rUymma",
+        "2_items_9bzjFk"
+      ],
+      "settings": {
+        "container": "container",
+        "heading": "Why Partner with Dura-Cleanse?",
+        "heading_color": "#26336e"
+      }
+    },
+    "retail_form_block_rJUGRr": {
+      "type": "retail-form-block",
+      "settings": {
+        "container": "container",
+        "heading": "Interested in Learning More",
+        "description": "We'd love to hear from you! Fill out the short form below and a member of our team will be in touch to discuss the benefits of becoming a Dura-Cleanse retailer.",
+        "form_heading": "Retail Inquiry Form",
+        "form_background": "#26336e",
+        "company": true,
+        "name": true,
+        "email": true,
+        "phone_number": true,
+        "cover_letter": true
+      }
     }
   },
   "order": [
@@ -1453,7 +1623,10 @@
     "image_banner_LiDQbW",
     "image_banner_rB3J6B",
     "rich_text_VtqRqK",
-    "custom_liquid_TKb78w",
-    "image_banner_EktB3N"
+    "custom_video_slider_show_with_text_TXG3Nx",
+    "image_banner_EktB3N",
+    "image_banner_yh8C7q",
+    "custom_liquid_pNptNM",
+    "retail_form_block_rJUGRr"
   ]
 }
