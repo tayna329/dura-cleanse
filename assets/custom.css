@@ -413,13 +413,14 @@
     background-color: #fff;
     left: 2px;
     top: 9px;
+    transition: transform .3s;
 }
 
 .product-faqs .faqs-item .card-header .icon-plus::after  {
     transform: rotate(90deg);
 }
 
-.product-faqs .faqs-item .card-header:not(.collapsed) .icon-plus  {
-
+.product-faqs .faqs-item .card-header:not(.collapsed) .icon-plus::after  {
+    transform: rotate(0deg);
 }
 
