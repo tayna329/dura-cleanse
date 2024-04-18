@@ -388,10 +388,18 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
+    },
+    "product_faqs_9Fja4G": {
+      "type": "product-faqs",
+      "settings": {
+        "container": "fullwidth",
+        "heading": "FAQs"
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "product_faqs_9Fja4G"
   ]
 }
