@@ -103,6 +103,7 @@
         },
         "04ea8843-f461-4f1d-8ea4-43f62fdfb21e": {
           "type": "perks",
+          "disabled": true,
           "settings": {
             "spacing_top": 0,
             "spacing_bottom": 22,
