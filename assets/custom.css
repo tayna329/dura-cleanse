@@ -374,7 +374,7 @@
 }
 
 .product-faqs .faqs-item .card-header .title {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     font-family: Gotham-Medium;
     font-size: 24px;
     font-weight: 500;
@@ -392,3 +392,25 @@
     line-height: 20.1px;
     font-weight: 400;
 }
+
+.product-faqs .faqs-item .card-header .icon-plus {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #0c9cd8;
+}
+
+.product-faqs .faqs-item .card-header .icon-plus::before {
+    content: " ";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: #fff;
+    left: 2px;
+}
+
+.product-faqs .faqs-item .card-header:not(.collapsed) .icon-plus  {
+
+}
+
