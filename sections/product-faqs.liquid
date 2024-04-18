@@ -13,6 +13,8 @@
                             <div class="faqs-row">
                                 
                                 {%for item in product_faqs %}
+                                    <div class="faqs-item scroll-trigger animate--slide-in">
+                                        <div class="card">
                                     <div class="card-header collapsed" id="question-{{ forloop.index }}" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
                                         <div class="title" role="button" tabindex="0">
                                             {{ item.title }}
@@ -25,6 +27,8 @@
                                                 {{ item.description }}
                                             </div>
                                         </div>
+                                    </div>
+                                    </div>
                                     </div>
                                 {%endfor %}
                             </div>
