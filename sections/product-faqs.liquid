@@ -1,6 +1,5 @@
 {%- assign container = section.settings.container -%}
 {%-assign product_faqs = product.metafields.information.faqs.value | reverse | reverse -%}
-{{ product_faqs }}
 {%-if product_faqs != blank -%}
 <link rel="stylesheet" href="{{ 'component-faqs.css' | asset_url }}" media="print" onload="this.media='all'">
 <div class="{% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %}">
@@ -39,6 +38,8 @@
         </div>
     </div>
 </div>
+<script src="{{ 'halo-faqs.js' | asset_url }}" defer></script>
+
 {%-endif -%}
 {% schema %} 
     {
