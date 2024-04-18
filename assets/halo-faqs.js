@@ -81,6 +81,7 @@ class FAQs extends HTMLElement {
     }
 
     onClickHeaderButtonHandler(event){
+        console.log("djdkjdkjkd");
         const btn = event.currentTarget
         const content = btn.nextElementSibling
 
