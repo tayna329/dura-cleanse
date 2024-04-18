@@ -36,7 +36,8 @@
             "show_review": true,
             "show_sold_in": true,
             "sold_in_number": "3,5,6,7,8,10,12,15",
-            "sold_in_hours": "10,15,16,17,18,20,25,35"
+            "sold_in_hours": "10,15,16,17,18,20,25,35",
+            "color_text_sold_in": "#e95144"
           }
         },
         "b87b5d94-d9c5-4d66-a99b-da56e65d25e9": {
@@ -83,6 +84,7 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
+            "show_variant_image_group": false,
             "enable_border_top": false,
             "enable_border_bottom": false,
             "color_border": "#e6e6e6",
@@ -107,7 +109,6 @@
             "show_size_chart": true,
             "size_chart_type": "custom_image",
             "size_chart_image_type": "jpg",
-            "size_chart_image": "shopify:\/\/shop_images\/size-chart-compressor_1024x1024_8197de6e-623b-4030-a0bb-46b679cbf2d9.webp",
             "show_compare_color": true,
             "show_compare_color_drop_drap": true,
             "compare_layout": "1"
@@ -117,6 +118,7 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false,
             "spacing_top": 0,
             "spacing_bottom": 15,
             "atc_animation": "horizontal-shaking",
@@ -180,7 +182,9 @@
             "type": "all",
             "content": "<p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos.Donec pretium egestas sapien et mollis. Pellentesque diam dolor cosmopolis etos lobortis.<\/p>\n<dl>\n<dt>Comodous:<\/dt>\n<dd>Comodous in tempor ullamcorper miaculis<\/dd>\n<\/dl>\n<dl>\n<dt>Mattis laoreet:<\/dt>\n<dd>Pellentesque vitae neque mollis urna mattis laoreet.<\/dd>\n<\/dl>\n<dl>\n<dt>Divamus de ametos:<\/dt>\n<dd>Divamus sit amet purus justo.<\/dd>\n<\/dl>\n<dl>\n<dt>Molestie:<\/dt>\n<dd>Proin molestie egestas orci ac suscipit risus posuere loremous<\/dd>\n<\/dl>",
             "enable_btn_show_more": false,
-            "maximum_des_to_show": 300
+            "maximum_des_to_show": 300,
+            "product_custom_source": "dynamic",
+            "product_tab_key_metafield": ""
           }
         },
         "3d9ea84d-5527-4bce-abe6-5debef3ec955": {
@@ -191,7 +195,9 @@
             "type": "all",
             "content": "<h3>Returns Policy<\/h3>\n<p>You may return most new, unopened items within 30 days of delivery for a full refund. We'll also pay the return shipping costs if the return is a result of our error (you received an incorrect or defective item, etc.).<\/p>\n<p>You should expect to receive your refund within four weeks of giving your package to the return shipper, however, in many cases you will receive a refund more quickly. This time period includes the transit time for us to receive your return from the shipper (5 to 10 business days), the time it takes us to process your return once we receive it (3 to 5 business days), and the time it takes your bank to process our refund request (5 to 10 business days).<\/p>\n<p>If you need to return an item, simply login to your account, view the order using the \"Complete Orders\" link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.<\/p>\n<h3>Shipping<\/h3>\n<p>We can ship to virtually any address in the world. Note that there are restrictions on some products, and some products cannot be shipped to international destinations.<\/p>\n<p>When you place an order, we will estimate shipping and delivery dates for you based on the availability of your items and the shipping options you choose. Depending on the shipping provider you choose, shipping date estimates may appear on the shipping quotes page.<\/p>\n<p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound.<\/p>",
             "enable_btn_show_more": false,
-            "maximum_des_to_show": 300
+            "maximum_des_to_show": 300,
+            "product_custom_source": "dynamic",
+            "product_tab_key_metafield": ""
           }
         },
         "b9d6eb19-10f4-41f8-bfdc-ea10e8b3182a": {
@@ -202,7 +208,9 @@
             "type": "all",
             "content": "<table>\n    <tbody>\n        <tr>\n            <td class=\"tb-title\">Drostique<\/td>\n            <td>Nam tempus turpis at metus scelerisque placerat nulla deumantos<\/td>\n        <\/tr>\n        <tr>\n            <td class=\"tb-title\">Pharetro Lorem<\/td>\n            <td>Pellentesque diam dolor elementum etos lobortis des mollis<\/td>\n        <\/tr>\n        <tr>\n            <td class=\"tb-title\">Milancelos<\/td>\n            <td>Donec pretium egestas sapien et mollis<\/td>\n        <\/tr>\n        <tr>\n            <td class=\"tb-title\">Pellentesque<\/td>\n            <td>Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras<\/td>\n        <\/tr>\n        <tr>\n            <td class=\"tb-title\">Proin Molestie<\/td>\n            <td>Pellentesque diam dolor elementum etos lobortis des mollis<\/td>\n        <\/tr>\n        <tr>\n            <td class=\"tb-title\">Cosmopolis<\/td>\n            <td>Donec pretium egestas sapien et mollis<\/td>\n        <\/tr>\n    <\/tbody>\n<\/table>",
             "enable_btn_show_more": false,
-            "maximum_des_to_show": 300
+            "maximum_des_to_show": 300,
+            "product_custom_source": "dynamic",
+            "product_tab_key_metafield": ""
           }
         },
         "faebbc78-6094-4bc0-a917-80dbfbf5ef3c": {
@@ -258,6 +266,7 @@
         "main_image_arrows_mobile": true,
         "main_image_counter_mobile": true,
         "main_image_enable_parallax_mb": false,
+        "main_image_show_zoom_icon_mb": true,
         "main_image_position": "left",
         "main_image_layout": "1",
         "main_image_show_custom_cursor": true,
@@ -360,8 +369,17 @@
         "product_block_per_row": "4",
         "product_block_swipe_on_mobile": true,
         "product_block_dots": false,
+        "product_block_dots_mb": true,
         "product_block_arrows": true,
+        "product_block_arrows_mb": false,
         "product_block_show": "4",
+        "product_block_per_view": "4",
+        "show_half": true,
+        "scroll_height": 4,
+        "scroll_track_bg": "#f1f1f1",
+        "scroll_thumb_color": "#000",
+        "scroll_thumb_hover_color": "#444",
+        "enable_hover_drag_icon": true,
         "enable_layout_special": false,
         "bg_card": "#ffffff",
         "padding_card": 15,
@@ -370,10 +388,18 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
+    },
+    "product_faqs_jrBKBG": {
+      "type": "product-faqs",
+      "settings": {
+        "container": "fullwidth",
+        "heading": "Faqs"
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "product_faqs_jrBKBG"
   ]
 }
