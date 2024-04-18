@@ -102,7 +102,7 @@
                             {% if message_method_icon_1 != blank or message_method_icon_2 != blank %}
                                 <div class="faqs-icon-container">
                                     {% if message_method_icon_1 != blank %}
-                                        <{% if message_method_link_1 != blank %}a href={{ message_method_link_1.url }}{% else %}div{% endif %} class='message-icon-1 message-icon'>
+                                        {% if message_method_link_1 != blank %}a href={{ message_method_link_1.url }}{% else %}div{% endif %} class='message-icon-1 message-icon'>
                                             <img src="{{ message_method_icon_1 | image_url }}" width="{{ message_method_icon_1.width }}" height="{{ message_method_icon_2.height }}" loading="lazy"/>
                                             {% if message_method_text_1 != blank %}
                                                 <span class="message-icon-text-1">{{ message_method_text_1 }}</span>
