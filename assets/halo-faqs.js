@@ -1,5 +1,6 @@
 class FAQs extends HTMLElement {
     constructor() {
+        alert();
         super();
 
         this.filter = document.getElementById('haloFAQsFilter');
