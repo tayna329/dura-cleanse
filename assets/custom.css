@@ -358,3 +358,20 @@
     background: #0c9cd8;
 }
 
+
+/*//====================================================
+// Product FAQs
+// ===================================================*/
+.product-faqs .faqs-item {
+    box-shadow: 0px 4px 12px 0px #0000001A;
+    border-left: 10px solid #0c9cd8;
+    background-color: #ffffff;
+}
+
+.product-faqs .faqs-item .card-header .title {
+    background-color: #ffffff;
+}
+
+.product-faqs .faqs-item .card-header .title:after {
+    display: none;
+}
