@@ -368,10 +368,27 @@
     background-color: #ffffff;
 }
 
+.product-faqs .faqs-item+.faqs-item {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
 .product-faqs .faqs-item .card-header .title {
     background-color: #ffffff;
+    font-family: Gotham-Medium;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: #464646;
 }
 
 .product-faqs .faqs-item .card-header .title:after {
     display: none;
+}
+
+.product-faqs .faqs-item .card-body {
+    font-family: MadaniArabic-Regular;
+    font-size: 16px;
+    line-height: 20.1px;
+    font-weight: 400;
 }
