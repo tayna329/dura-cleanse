@@ -394,20 +394,29 @@
 }
 
 .product-faqs .faqs-item .card-header .icon-plus {
-    position: relative;
+    position: absolute;
+    right: 32px;
     display: inline-block;
     width: 20px;
     height: 20px;
     background-color: #0c9cd8;
+    z-index: 5;
+    top: 28px;
+    border-radius: 4px;
 }
 
-.product-faqs .faqs-item .card-header .icon-plus::before {
+.product-faqs .faqs-item .card-header .icon-plus::before, .product-faqs .faqs-item .card-header .icon-plus::after {
     content: " ";
     position: absolute;
     width: 16px;
     height: 2px;
     background-color: #fff;
     left: 2px;
+    top: 9px;
+}
+
+.product-faqs .faqs-item .card-header .icon-plus::after  {
+    transform: rotate(90deg);
 }
 
 .product-faqs .faqs-item .card-header:not(.collapsed) .icon-plus  {
