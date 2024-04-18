@@ -3,7 +3,7 @@
 {%-if product_faqs != blank -%}
 <link rel="stylesheet" href="{{ 'component-faqs.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-faqs.css' | asset_url | stylesheet_tag }}</noscript>
-<div class="faq-container {% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %}">
+<faqs-item class="faq-container {% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %}">
     <div class="halo-page-content halo-faqs-content scroll-trigger animate--slide-in">
         <div class="faqs">
             <div class="faqs-message-and-questions">
@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-</div>
+</faqs-item>
 <script src="{{ 'halo-faqs.js' | asset_url }}" defer></script>
 
 {%-endif -%}
