@@ -377,8 +377,8 @@
         "show_half": true,
         "scroll_height": 4,
         "scroll_track_bg": "#f1f1f1",
-        "scroll_thumb_color": "#000",
-        "scroll_thumb_hover_color": "#444",
+        "scroll_thumb_color": "#000000",
+        "scroll_thumb_hover_color": "#444444",
         "enable_hover_drag_icon": true,
         "enable_layout_special": false,
         "bg_card": "#ffffff",
@@ -388,18 +388,10 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
-    },
-    "product_faqs_jrBKBG": {
-      "type": "product-faqs",
-      "settings": {
-        "container": "fullwidth",
-        "heading": "Faqs"
-      }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
-    "product_faqs_jrBKBG"
+    "product-recommendations"
   ]
 }
