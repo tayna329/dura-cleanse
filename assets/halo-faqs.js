@@ -23,6 +23,7 @@ class FAQs extends HTMLElement {
 
         if(this.querySelector('.faqs')){
             this.querySelectorAll('.card-header').forEach((headerButton) => {
+                console.log("cliecked")
                 headerButton.addEventListener('click', this.onClickHeaderButtonHandler.bind(this));
             });
         }
